@@ -4,6 +4,10 @@
 
 CellScope audits LTE and 5G engineering-parameter spreadsheets. It checks PCI reuse conflicts, TAC regional consistency, and same-site MOD3 conflicts, then produces an Excel report with findings, evidence, and candidate corrections. Engineers must review the source data and proposed changes before applying them to a live network.
 
+[![CellScope English interface after a completed audit](assets/screenshots/cellscope-app-overview.png)](assets/screenshots/cellscope-app-overview.png)
+
+*Completed audit in the licensed Windows app. The local path is obscured; counts describe this run, not a general performance benchmark.*
+
 ## Why engineers use it
 
 Checking thousands of cells by hand means repeated filtering, distance lookups, parameter comparisons, and report assembly. CellScope runs those checks together and keeps the evidence behind each finding in one workbook. It highlights data-quality issues and leaves uncertain regional decisions for manual review instead of forcing a suggested value.

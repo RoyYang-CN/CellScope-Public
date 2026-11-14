@@ -2,6 +2,8 @@
 
 [Download](https://github.com/RoyYang-CN/CellScope-Public/releases/latest) · [Buy a license](https://www.creem.io/product/prod_1q96Nt7Aj1oyc29rYtZGeo) · [简体中文简介](README_CN.md)
 
+The screenshots show one completed app run. Site and cell identifiers and local paths are obscured; the visible counts and parameter values illustrate the report format. This is a product walkthrough, not a measured time-savings claim. The interface shown has an active license; new users start with a 10-day trial.
+
 ## 1. What CellScope does
 
 CellScope Public Edition is a desktop audit tool for wireless engineering parameters. It reads Excel engineering data, identifies cells, coordinates, PCI, frequency, TAC, RAT and coverage type, then performs spatial, reuse and regional consistency checks.
@@ -62,15 +64,27 @@ Actual time savings depend on data volume, input quality and the amount of engin
 
 ### PCI check
 
-Checks PCI reuse risk by RAT, frequency, coverage type and spatial distance, and can provide a suggested PCI when the license allows recommendations.
+Checks PCI reuse risk by RAT, frequency, coverage type and spatial distance, and can provide a suggested PCI when the license allows recommendations. The report displays the conflicting pair, distance, configured threshold, risk band, and suggested value for review.
+
+[![PCI Check report excerpt showing conflict distance, risk, and candidate PCI](assets/screenshots/pci-conflicts.png)](assets/screenshots/pci-conflicts.png)
+
+*PCI Check excerpt. Cell identities are obscured; the displayed values belong to this run. [Open full-size image](assets/screenshots/pci-conflicts.png).*
 
 ### TAC check
 
-Counts TAC distribution within a regional neighborhood to identify discontinuity, isolated TAC patterns and third-party TAC patterns. The regional count is cross-frequency; same frequency is not required.
+Counts TAC distribution within a regional neighborhood to identify discontinuity, isolated TAC patterns and third-party TAC patterns. The regional count is cross-frequency; same frequency is not required. The report exposes neighbor evidence, anomaly category, and decision basis while leaving the actual TAC values obscured in this example.
+
+[![TAC Check report excerpt showing neighbor counts, anomaly category, and decision basis](assets/screenshots/tac-anomalies.png)](assets/screenshots/tac-anomalies.png)
+
+*TAC Check excerpt. Identifiers and TAC values are obscured; counts and categories are visible. [Open full-size image](assets/screenshots/tac-anomalies.png).*
 
 ### MOD3 check
 
-Checks same-site same-frequency MOD3 conflicts and identifies exact duplicate engineering rows so duplicates do not create false conflicts.
+Checks same-site same-frequency MOD3 conflicts and identifies exact duplicate engineering rows so duplicates do not create false conflicts. The report shows each affected cell's current PCI and MOD3 class alongside a candidate PCI and the resulting MOD3 class.
+
+[![MOD3 Check report excerpt showing same-site conflict and candidate PCI](assets/screenshots/mod3-conflicts.png)](assets/screenshots/mod3-conflicts.png)
+
+*MOD3 Check excerpt. Site and cell identities are obscured; candidate values still require engineering review. [Open full-size image](assets/screenshots/mod3-conflicts.png).*
 
 ### Data issues
 
