@@ -1,0 +1,11 @@
+# Release assets are uploaded through GitHub Releases.
+*.exe
+*.zip
+*.7z
+*.env
+*.key
+*.pem
+__pycache__/
+.temp/
+build/
+dist/
